@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\Azurtesting\\Azurtesting.csproj",
+      "projectUniqueName": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\Azurtesting.csproj",
       "projectName": "Azurtesting",
-      "projectPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\Azurtesting\\Azurtesting.csproj",
+      "projectPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\Azurtesting.csproj",
       "packagesPath": "C:\\Users\\badre.zouiri.ext\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\Azurtesting\\obj\\",
+      "outputPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\badre.zouiri.ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
