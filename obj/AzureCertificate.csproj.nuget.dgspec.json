@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\badre.zouiri.ext\\Desktop\\Cam\\git\\AzurApp\\AzureCertificate.csproj": {}
+    "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\AzureCertificate.csproj": {}
   },
   "projects": {
-    "C:\\Users\\badre.zouiri.ext\\Desktop\\Cam\\git\\AzurApp\\AzureCertificate.csproj": {
+    "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\AzureCertificate.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\badre.zouiri.ext\\Desktop\\Cam\\git\\AzurApp\\AzureCertificate.csproj",
+        "projectUniqueName": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\AzureCertificate.csproj",
         "projectName": "AzureCertificate",
-        "projectPath": "C:\\Users\\badre.zouiri.ext\\Desktop\\Cam\\git\\AzurApp\\AzureCertificate.csproj",
+        "projectPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\AzureCertificate.csproj",
         "packagesPath": "C:\\Users\\badre.zouiri.ext\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\badre.zouiri.ext\\Desktop\\Cam\\git\\AzurApp\\obj\\",
+        "outputPath": "C:\\Users\\badre.zouiri.ext\\source\\repos\\azureCertificate\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\badre.zouiri.ext\\AppData\\Roaming\\NuGet\\NuGet.Config",
