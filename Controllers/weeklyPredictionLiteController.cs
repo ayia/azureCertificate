@@ -16,7 +16,7 @@ namespace Azurtesting.Controllers
        
 
         [HttpGet()]
-        public List<Azurtesting.Models.Entry> Get(string currency)
+        public List<Azurtesting.Models.Entry> Get(string currency, Models.Entry div)
         {
             List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
             // The URL of the web page you want to scrape
@@ -27,25 +27,25 @@ namespace Azurtesting.Controllers
                {*/
             // Create a new HtmlWeb instance
             HtmlOperations web = new HtmlOperations();
-            int i = 1;
+         
             string url2 = url;//+ i.ToString();
             // Load the web page
             HtmlDocument doc = web.Load(url2);
             List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency);
 
 
-            foreach (Azurtesting.Models.Entry div in a)
+            foreach (Azurtesting.Models.Entry div55 in a)
             {
 
                 // Extract the URL from the "a" tag within the "div" with class "title"
-                string link = div.Url;
+                string link = div55.Url;
                 // Find matches
-                MatchCollection matches = Regex.Matches(div.Titel, pattern);
+                MatchCollection matches = Regex.Matches(div55.Titel, pattern);
                 if (matches.Count >= 2) // Check if at least two dates were found
                 {
                     // Extract the start and end dates
-                    div.StartDate = matches[0].Value;
-                    div.EndDate = matches[1].Value;
+                    div55.StartDate = matches[0].Value;
+                    div55.EndDate = matches[1].Value;
                 }
 
 

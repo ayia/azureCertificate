@@ -32,16 +32,16 @@ namespace Azurtesting.DAO
                 {
                     // Extract the title from the "title" attribute in the "div" with class "title"
                     var titleNode = div.SelectSingleNode(".//div[contains(@class, 'title')]");
-                    string title = titleNode?.GetAttributeValue("title", "No title attribute found");
+                    string? title = titleNode?.GetAttributeValue("title", "No title attribute found");
 
                     if ((title ?? "").Trim().ToUpper().StartsWith(query.ToUpper()))
                     {
                         // Extract the URL from the "a" tag within the "div" with class "title"
-                        string link = titleNode?.SelectSingleNode(".//a")?.GetAttributeValue("href", "No link found");
+                        string? link = titleNode?.SelectSingleNode(".//a")?.GetAttributeValue("href", "No link found");
                         Models.Entry selectedentry = new Models.Entry()
                         {
-                            Titel = title,
-                            Url = link
+                            Titel = (title ?? ""),
+                            Url = (link ?? "")
 
                         };
 
