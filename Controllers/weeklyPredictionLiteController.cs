@@ -15,12 +15,12 @@ namespace Azurtesting.Controllers
 
        
 
-        [HttpGet("{Currency}")]
+        [HttpGet()]
         public List<Azurtesting.Models.Entry> Get(string currency)
         {
             List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
             // The URL of the web page you want to scrape
-            string url = "https://www.litefinance.org/blog/authors/alex-geuta/?page=";
+            string url = "https://www.litefinance.org/blog/authors/alex-geuta/";
             // Regular expression pattern to match dates in the format dd.mm.yy
             string pattern = @"(\d{2}\.\d{2}\.\d{2})";
             /*   for (int i = 1; i < 2; i++)
@@ -28,15 +28,14 @@ namespace Azurtesting.Controllers
             // Create a new HtmlWeb instance
             HtmlOperations web = new HtmlOperations();
             int i = 1;
-            string url2 = url + i.ToString();
+            string url2 = url;//+ i.ToString();
             // Load the web page
             HtmlDocument doc = web.Load(url2);
-            List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency.ToUpper());
+            List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency);
 
 
             foreach (Azurtesting.Models.Entry div in a)
             {
-
 
                 // Extract the URL from the "a" tag within the "div" with class "title"
                 string link = div.Url;
