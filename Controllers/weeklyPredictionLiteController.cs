@@ -34,18 +34,18 @@ namespace Azurtesting.Controllers
             List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency);
 
 
-            foreach (Azurtesting.Models.Entry div55 in a)
+            foreach (Azurtesting.Models.Entry div in a)
             {
 
                 // Extract the URL from the "a" tag within the "div" with class "title"
-                string link = div55.Url;
+                string link = div.Url;
                 // Find matches
-                MatchCollection matches = Regex.Matches(div55.Titel, pattern);
+                MatchCollection matches = Regex.Matches(div.Titel, pattern);
                 if (matches.Count >= 2) // Check if at least two dates were found
                 {
                     // Extract the start and end dates
-                    div55.StartDate = matches[0].Value;
-                    div55.EndDate = matches[1].Value;
+                    div.StartDate = matches[0].Value;
+                    div.EndDate = matches[1].Value;
                 }
 
 
