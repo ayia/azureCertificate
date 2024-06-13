@@ -18,6 +18,7 @@ namespace Azurtesting.Controllers
         [HttpGet]
         public List<Azurtesting.Models.Entry> Get(string currency)
         {
+
             List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
             // The URL of the web page you want to scrape
             string url = "https://www.litefinance.org/blog/authors/alex-geuta/";
