@@ -31,7 +31,7 @@ namespace Azurtesting.Controllers
             string url2 = url + i.ToString();
             // Load the web page
             HtmlDocument doc = web.Load(url2);
-            List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency);
+            List<Azurtesting.Models.Entry> a = web.GetEntries(doc, currency.ToUpper());
 
 
             foreach (Azurtesting.Models.Entry div in a)
