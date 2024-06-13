@@ -34,7 +34,7 @@ namespace Azurtesting.DAO
                     var titleNode = div.SelectSingleNode(".//div[contains(@class, 'title')]");
                     string title = titleNode?.GetAttributeValue("title", "No title attribute found");
 
-                    if (title.Trim().ToUpper().StartsWith(query.ToUpper()))
+                    if ((title ?? "").Trim().ToUpper().StartsWith(query.ToUpper()))
                     {
                         // Extract the URL from the "a" tag within the "div" with class "title"
                         string link = titleNode?.SelectSingleNode(".//a")?.GetAttributeValue("href", "No link found");
