@@ -8,10 +8,19 @@
     ".NETCoreApp,Version=v6.0": {
       "Azurtesting/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.11.61",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "Azurtesting.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.61": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.61.0",
+            "fileVersion": "1.11.61.0"
+          }
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {},
@@ -68,6 +77,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack/1.11.61": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqZASeEFHS9quHvfZSwaULoAJLWkOYVPiQjc3P9J4pQS8vSYzrP3bxe04Vm7vYYuxwbQhq9hCSVvZVLTyRaNaQ==",
+      "path": "htmlagilitypack/1.11.61",
+      "hashPath": "htmlagilitypack.1.11.61.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
       "type": "package",

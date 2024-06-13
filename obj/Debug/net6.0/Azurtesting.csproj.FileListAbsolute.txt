@@ -56,3 +56,4 @@ C:\Users\badre.zouiri.ext\source\repos\azureCertificate\bin\Debug\net6.0\Swashbu
 C:\Users\badre.zouiri.ext\source\repos\azureCertificate\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\badre.zouiri.ext\source\repos\azureCertificate\obj\Debug\net6.0\Azurtesting.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\badre.zouiri.ext\source\repos\azureCertificate\obj\Debug\net6.0\Azurtesting.csproj.CopyComplete
+C:\Users\badre.zouiri.ext\source\repos\azureCertificate\bin\Debug\net6.0\HtmlAgilityPack.dll
