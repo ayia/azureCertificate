@@ -15,7 +15,7 @@ namespace Azurtesting.Controllers
 
        
 
-        [HttpGet("{Currency}")]
+        [HttpGet]
         public List<Azurtesting.Models.Entry> Get(string currency)
         {
             List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
