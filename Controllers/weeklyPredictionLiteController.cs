@@ -15,7 +15,7 @@ namespace Azurtesting.Controllers
 
        
 
-        [HttpGet()]
+        [HttpGet("{Currency}")]
         public List<Azurtesting.Models.Entry> Get(string currency)
         {
             List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
@@ -27,7 +27,7 @@ namespace Azurtesting.Controllers
                {*/
             // Create a new HtmlWeb instance
             HtmlOperations web = new HtmlOperations();
-         
+       
             string url2 = url;//+ i.ToString();
             // Load the web page
             HtmlDocument doc = web.Load(url2);
@@ -36,6 +36,7 @@ namespace Azurtesting.Controllers
 
             foreach (Azurtesting.Models.Entry div in a)
             {
+
 
                 // Extract the URL from the "a" tag within the "div" with class "title"
                 string link = div.Url;
