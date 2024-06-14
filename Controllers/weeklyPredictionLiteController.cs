@@ -17,9 +17,7 @@ namespace Azurtesting.Controllers
 
         [HttpGet]
         public List<Azurtesting.Models.Entry> Get(string currency)
-        {
-
-            List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
+        {List<Azurtesting.Models.Entry> thelist = new List<Azurtesting.Models.Entry>();
             // The URL of the web page you want to scrape
             string url = "https://www.litefinance.org/blog/authors/alex-geuta/";
             // Regular expression pattern to match dates in the format dd.mm.yy
@@ -37,8 +35,6 @@ namespace Azurtesting.Controllers
 
             foreach (Azurtesting.Models.Entry div in a)
             {
-
-
                 // Extract the URL from the "a" tag within the "div" with class "title"
                 string link = div.Url;
                 // Find matches
@@ -50,11 +46,11 @@ namespace Azurtesting.Controllers
                     div.EndDate = matches[1].Value;
                 }
 
-
-
-
-                //   }
-                thelist.AddRange(a);
+                if (!thelist.Where(io => io.Titel == div.Titel).Any())  
+                {
+                    thelist.AddRange(a);
+                }
+               
             }
             return thelist;
         }
